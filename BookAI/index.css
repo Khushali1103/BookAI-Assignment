@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(15, 23, 42);
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+}
+
+header {
+    top: 0;
+    position: sticky;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e293b;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 63px;
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    margin: 3px 17px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(81, 201, 235);
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    box-sizing: border-box;
+
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+}
+
+td,
+th {
+    border: solid #334155;
+    border-width: 1px 0;
+    text-align: left;
+    padding: 8px;
+}
+
+section h3 {
+    padding-top: 30px;
+    color: #7e80f2;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5px;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        max-width: 150%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    td,
+    th {
+        padding: 4px;
+    }
+
+    section h2 {
+        margin-top: 25px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        top: 0;
+        margin-bottom: 250px;
+        width: 100%;
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    main {
+        margin-top: -230px;
+        max-width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.3rem;
+    }
+
+    table {
+
+        height: 160px;
+        align-items: center;
+
+
+    }
+
+    td,
+    th {
+
+        padding: 15px;
+    }
+
+    section h2 {
+        margin-top: 12px;
+
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
